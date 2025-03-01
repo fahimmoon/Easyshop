@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductGrid from '../components/ProductGrid';
-import Header from '../components/Header';
 
 const CategoryPage: React.FC = () => {
   const { category } = useParams<{ category: string }>();
@@ -23,8 +22,6 @@ const CategoryPage: React.FC = () => {
   
   return (
     <div>
-      <Header onSearch={() => {}} />
-      
       <div className="bg-gray-100 py-8">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold mb-2">
