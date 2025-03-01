@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { Trash2, Plus, Minus, ArrowLeft } from 'lucide-react';
-import Header from '../components/Header';
 
 const CartPage: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, totalPrice, clearCart } = useCart();
@@ -10,7 +9,6 @@ const CartPage: React.FC = () => {
   if (cart.length === 0) {
     return (
       <div>
-        <Header onSearch={() => {}} />
         <div className="container mx-auto px-4 py-16 text-center">
           <h2 className="text-2xl font-bold mb-4">Your Cart is Empty</h2>
           <p className="mb-8">Looks like you haven't added any items to your cart yet.</p>
@@ -28,8 +26,6 @@ const CartPage: React.FC = () => {
   
   return (
     <div>
-      <Header onSearch={() => {}} />
-      
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold mb-8">Shopping Cart</h1>
         
