@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About section */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">About eBay</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">About EasyShop</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition">Company Info</a></li>
               <li><a href="#" className="hover:text-white transition">News</a></li>
@@ -28,9 +28,9 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition">Announcements</a></li>
               <li><a href="#" className="hover:text-white transition">Discussion Boards</a></li>
-              <li><a href="#" className="hover:text-white transition">eBay Giving Works</a></li>
-              <li><a href="#" className="hover:text-white transition">eBay for Charity</a></li>
-              <li><a href="#" className="hover:text-white transition">eBay Community</a></li>
+              <li><a href="#" className="hover:text-white transition">EasyShop Giving Works</a></li>
+              <li><a href="#" className="hover:text-white transition">EasyShop for Charity</a></li>
+              <li><a href="#" className="hover:text-white transition">EasyShop Community</a></li>
             </ul>
           </div>
           
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition">Seller Center</a></li>
               <li><a href="#" className="hover:text-white transition">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white transition">eBay Returns</a></li>
+              <li><a href="#" className="hover:text-white transition">EasyShop Returns</a></li>
               <li><a href="#" className="hover:text-white transition">Shipping Center</a></li>
               <li><a href="#" className="hover:text-white transition">Purchase Protection</a></li>
               <li><a href="#" className="hover:text-white transition">Security Center</a></li>
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
             
-            <h3 className="text-white text-lg font-semibold mb-4">eBay App</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">EasyShop App</h3>
             <div className="flex space-x-2">
               <a href="#" className="bg-black px-4 py-2 rounded flex items-center hover:bg-gray-900 transition">
                 <div>
@@ -119,13 +119,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <div className="flex items-center justify-center md:justify-start">
-                <span className="text-xl font-bold text-[#e53238]">e</span>
-                <span className="text-xl font-bold text-[#0064d2]">b</span>
-                <span className="text-xl font-bold text-[#f5af02]">a</span>
-                <span className="text-xl font-bold text-[#86b817]">y</span>
-                <span className="text-xl font-bold text-white"> Clone</span>
+                <span className="text-xl font-bold text-blue-600">Easy</span>
+                <span className="text-xl font-bold text-green-500">Shop</span>
               </div>
-              <p className="text-xs text-gray-500 mt-2">© 2025 eBay Inc. All Rights Reserved.</p>
+              <p className="text-xs text-gray-500 mt-2">© 2025 EasyShop Inc. All Rights Reserved.</p>
             </div>
             
             <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
