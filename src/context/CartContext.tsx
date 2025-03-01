@@ -15,6 +15,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
+  const [totalItems, setTotalItems] = useState(0);
 
   const addToCart = (product: Product) => {
     setCart(prevCart => {
@@ -30,6 +31,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
+    setTotalItems(prev => prev + 1);
   };
 
   const removeFromCart = (productId: number) => {
@@ -55,8 +57,6 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     setCart([]);
   };
 
-  const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-  
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity, 
     0
